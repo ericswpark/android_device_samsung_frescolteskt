@@ -1,10 +1,10 @@
 USE_CAMERA_STUB := true
 
 # inherit from the proprietary version
--include vendor/samsung/hlte/BoardConfigVendor.mk
+-include vendor/samsung/hlteskt/BoardConfigVendor.mk
 
 TARGET_NO_BOOTLOADER := true
-TARGET_BOOTLOADER_BOARD_NAME := hlte
+TARGET_BOOTLOADER_BOARD_NAME := hlteskt
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8660
@@ -29,7 +29,7 @@ BOARD_KERNEL_CMDLINE :=  console=null androidboot.hardware=qcom user_debug=31 ms
 BOARD_KERNEL_BASE :=  0x00000000
 #BOARD_FORCE_RAMDISK_ADDRESS := 0x02000000
 BOARD_KERNEL_PAGESIZE := 2048
-BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000 --dt device/samsung/hlte/dtb --tags_offset 0x01e00000
+BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000 --dt device/samsung/hlteskt/dtb --tags_offset 0x01e00000
 
 BOARD_BOOTIMAGE_PARTITION_SIZE :=     0x105c0000
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x00D00000
@@ -37,14 +37,14 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 0x105c0000
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 0x105c0000
 BOARD_FLASH_BLOCK_SIZE := 131072
 
-TARGET_PREBUILT_KERNEL := device/samsung/hlte/kernAl
+TARGET_PREBUILT_KERNEL := device/samsung/hlteskt/kernAl
 
 #TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/android0/f_mass_storage/lun%d/file
 
 # Use this flag if the board has a ext4 partition larger than 2gb
 BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_USERIMAGES_USE_EXT4 := true
-#BOARD_CUSTOM_BOOTIMG_MK :=  device/samsung/hlte/custombootimg.mk
+#BOARD_CUSTOM_BOOTIMG_MK :=  device/samsung/hlteskt/custombootimg.mk
 
 # TWRP specific build flags
 DEVICE_RESOLUTION := 1080x1920
@@ -60,7 +60,7 @@ TW_EXTERNAL_STORAGE_PATH := "/external_sd"
 TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
 TW_NO_REBOOT_BOOTLOADER := true
 TW_HAS_DOWNLOAD_MODE := true
-TW_INCLUDE_CRYPTO := true
+TW_INCLUDE_JB_CRYPTO := true
 TW_INCLUDE_CRYPTO_SAMSUNG := true
 TW_CRYPTO_FS_TYPE := "ext4"
 TW_CRYPTO_REAL_BLKDEV := "/dev/block/mmcblk0p29"
@@ -69,3 +69,6 @@ TW_CRYPTO_FS_OPTIONS := "nosuid,nodev,noatime,noauto_da_alloc,discard,journal_as
 TW_CRYPTO_FS_FLAGS := "0x00000406"
 TW_CRYPTO_KEY_LOC := "footer"
 TW_NO_EXFAT_FUSE := true
+TW_NO_EXFAT := true
+TARGET_USERIMAGES_USE_EXT4 := true
+GET_RECOVERY_QCOM_RTC_FIX := true

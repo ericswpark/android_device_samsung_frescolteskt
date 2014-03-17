@@ -2,6 +2,7 @@ import /init.recovery.${ro.hardware}.rc
 
 on early-init
     start ueventd
+	toolbox setenforce permissive
 
 on init
     export PATH /sbin:/vendor/bin:/system/sbin:/system/bin:/system/xbin

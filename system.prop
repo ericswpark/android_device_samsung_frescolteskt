@@ -14,8 +14,8 @@ ro.build.host=R0504-11
 ro.build.tags=release-keys
 ro.product.model=SM-N9005
 ro.product.brand=samsung
-ro.product.name=hltexx
-ro.product.device=hlte
+ro.product.name=hltesktxx
+ro.product.device=hlteskt
 ro.product.board=MSM8974
 ro.product.cpu.abi=armeabi-v7a
 ro.product.cpu.abi2=armeabi
@@ -25,10 +25,10 @@ ro.product.locale.region=GB
 ro.wifi.channels=
 ro.board.platform=msm8974
 # ro.build.product is obsolete; use ro.product.device
-ro.build.product=hlte
+ro.build.product=hlteskt
 # Do not try to parse ro.build.description or .fingerprint
-ro.build.description=hltexx-user 4.3 JSS15J N9005XXUBMI7 release-keys
-ro.build.fingerprint=samsung/hltexx/hlte:4.3/JSS15J/N9005XXUBMI7:user/release-keys
+ro.build.description=hltesktxx-user 4.3 JSS15J N9005XXUBMI7 release-keys
+ro.build.fingerprint=samsung/hltesktxx/hlte:4.3/JSS15J/N9005XXUBMI7:user/release-keys
 ro.build.characteristics=default
 # Samsung Specific Properties
 ro.build.PDA=N9005XXUBMI7
