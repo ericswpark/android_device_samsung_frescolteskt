@@ -49,16 +49,14 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
 		/* hltektt */
 		property_set("ro.product.model", "SM-N900K");
 		property_set("ro.product.name", "hltektt");
-		property_set("ro.product.device", "hltektt");
 	} else if (strstr(bootloader, "N900L")) {
 		/* hltelgt */
 		property_set("ro.product.model", "SM-N900L");
 		property_set("ro.product.name", "hltelgt");
-		property_set("ro.product.device", "hltelgt");
 	} else {
 		/* all other variants become hlteskt */
 		property_set("ro.product.model", "SM-N900S");
 		property_set("ro.product.name", "hlteskt");
-		property_set("ro.product.device", "hlteskt");
 	}
+	property_set("ro.product.device", "hlte");
 }
