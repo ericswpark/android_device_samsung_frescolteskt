@@ -45,18 +45,18 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
 
 	property_get("ro.bootloader", bootloader);
 
-	if (strstr(bootloader, "N900K")) {
-		/* hltektt */
-		property_set("ro.product.model", "SM-N900K");
-		property_set("ro.product.name", "hltektt");
-	} else if (strstr(bootloader, "N900L")) {
-		/* hltelgt */
-		property_set("ro.product.model", "SM-N900L");
-		property_set("ro.product.name", "hltelgt");
+	if (strstr(bootloader, "N750K")) {
+		/* frescoltektt */
+		property_set("ro.product.model", "SM-N750K");
+		property_set("ro.product.name", "frescoltektt");
+	} else if (strstr(bootloader, "N750L")) {
+		/* frescoltelgt */
+		property_set("ro.product.model", "SM-N750L");
+		property_set("ro.product.name", "frescoltelgt");
 	} else {
-		/* all other variants become hlteskt */
-		property_set("ro.product.model", "SM-N900S");
-		property_set("ro.product.name", "hlteskt");
+		/* all other variants become frescolteskt */
+		property_set("ro.product.model", "SM-N750S");
+		property_set("ro.product.name", "frescolteskt");
 	}
-	property_set("ro.product.device", "hlte");
+	property_set("ro.product.device", "frescolte");
 }

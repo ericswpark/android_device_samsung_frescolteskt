@@ -1,2 +1,2 @@
-add_lunch_combo omni_hlteskt-eng
-add_lunch_combo omni_hlteskt-userdebug
+add_lunch_combo omni_frescolteskt-eng
+add_lunch_combo omni_frescolteskt-userdebug

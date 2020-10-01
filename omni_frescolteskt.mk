@@ -1,5 +1,5 @@
 # Release name
-PRODUCT_RELEASE_NAME := hlteskt
+PRODUCT_RELEASE_NAME := frescolteskt
 
 $(call inherit-product, build/target/product/embedded.mk)
 
@@ -7,7 +7,7 @@ $(call inherit-product, build/target/product/embedded.mk)
 $(call inherit-product, vendor/omni/config/common.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := hlteskt
-PRODUCT_NAME := omni_hlteskt
+PRODUCT_DEVICE := frescolteskt
+PRODUCT_NAME := omni_frescolteskt
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung

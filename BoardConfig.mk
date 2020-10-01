@@ -33,15 +33,15 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 0x6ABC00000
 BOARD_CACHEIMAGE_PARTITION_SIZE    := 0x00C800000
 BOARD_FLASH_BLOCK_SIZE := 131072
 
-TARGET_PREBUILT_KERNEL := device/samsung/hlteskt/zImage
-TARGET_PREBUILT_DTB := device/samsung/hlteskt/dtb.img
+TARGET_PREBUILT_KERNEL := device/samsung/frescolteskt/zImage
+TARGET_PREBUILT_DTB := device/samsung/frescolteskt/dtb.img
 
 # Use this flag if the board has a ext4 partition larger than 2gb
 BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 BOARD_SUPPRESS_SECURE_ERASE := true
-BOARD_CUSTOM_BOOTIMG_MK :=  device/samsung/hlteskt/bootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK :=  device/samsung/frescolteskt/bootimg.mk
 
 # TWRP specific build flags
 TW_THEME := portrait_hdpi
@@ -71,7 +71,7 @@ TARGET_KEYMASTER_WAIT_FOR_QSEE := true
 # Init properties from bootloader version, ex. model info
 TARGET_UNIFIED_DEVICE := true
 TARGET_INIT_VENDOR_LIB := libinit_msm
-TARGET_LIBINIT_DEFINES_FILE := device/samsung/hlteskt/init/init_hlteskt.cpp
+TARGET_LIBINIT_DEFINES_FILE := device/samsung/frescolteskt/init/init_frescolteskt.cpp
 
 # Asian region language support
 TW_EXTRA_LANGUAGES := true
